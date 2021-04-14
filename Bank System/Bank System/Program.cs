@@ -7,23 +7,29 @@ namespace Bank_System
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to the bank system");
-            Console.WriteLine("Front Desk press 1");
-            Console.WriteLine("User press 2");
-            Console.WriteLine("Employee press 3");
+            Console.WriteLine("Welcome to c# tutorial");
+            Console.WriteLine("Facade press 1");
+            Console.WriteLine("Abstract Factory press 2");
+            Console.WriteLine("Adapter press 3");
+            Console.WriteLine("Prototype press 4");
+            Console.WriteLine("Singleton press 5");
 
             switch (Console.ReadLine())
             {
                 case "1":
-                    Console.WriteLine("welcome front desk");
-                    Class1 front = new Class1();
-                    front.getFrontDeskMenu();
+                    Console.WriteLine("Welcome Facade");
                     break;
                 case "2":
-                    Console.WriteLine("wlecome user");
+                    Console.WriteLine("Welcome Abstract Factory");
                     break;
                 case "3":
-                    Console.WriteLine("welcome Employee");
+                    Console.WriteLine("Welcome Adapter");
+                    break;
+                case "4":
+                    Console.WriteLine("Welcome Prototype");
+                    break;
+                case "5":
+                    Console.WriteLine("Welcome Singleton");
                     break;
                 default:
                     break;
