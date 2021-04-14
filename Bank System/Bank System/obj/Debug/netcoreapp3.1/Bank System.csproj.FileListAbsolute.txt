@@ -1,0 +1,13 @@
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\netcoreapp3.1\Bank System.exe
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\netcoreapp3.1\Bank System.deps.json
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\netcoreapp3.1\Bank System.runtimeconfig.json
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\netcoreapp3.1\Bank System.runtimeconfig.dev.json
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\netcoreapp3.1\Bank System.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\netcoreapp3.1\Bank System.pdb
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\netcoreapp3.1\Bank System.csprojAssemblyReference.cache
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\netcoreapp3.1\Bank System.AssemblyInfoInputs.cache
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\netcoreapp3.1\Bank System.AssemblyInfo.cs
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\netcoreapp3.1\Bank System.csproj.CoreCompileInputs.cache
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\netcoreapp3.1\Bank System.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\netcoreapp3.1\Bank System.pdb
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\netcoreapp3.1\Bank System.genruntimeconfig.cache
