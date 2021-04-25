@@ -1,0 +1,16 @@
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\Bank System.exe
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\Bank System.deps.json
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\Bank System.runtimeconfig.json
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\Bank System.runtimeconfig.dev.json
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\Bank System.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\ref\Bank System.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\Bank System.pdb
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.csprojAssemblyReference.cache
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.GeneratedMSBuildEditorConfig.editorconfig
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.AssemblyInfoInputs.cache
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.AssemblyInfo.cs
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.csproj.CoreCompileInputs.cache
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\ref\Bank System.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.pdb
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.genruntimeconfig.cache
