@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_System.Account
+namespace Bank_Account
 {
-    class DebitCard : AbstractAccount
+    class DebitCard : Account
     {
 
         public double maxBalance = 100000;
@@ -33,7 +33,7 @@ namespace Bank_System.Account
             }
         }
 
-        public bool withdraw(double amount)
+        public override bool withdraw(double amount)
         {
             this.ammount = amount;
 

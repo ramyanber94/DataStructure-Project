@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_System.Account
+namespace Bank_Account
 {
-    abstract class AbstractAccount : IAccount
+    abstract class Account : IAccount
     {
         public double ammount { get; set; }
         public double balance { get; set; }
         public  string id { get; internal set; }
         public string Name { get; set; }
 
-        public AbstractAccount(string id , string name)
+        public Account(string id , string name)
         {
             this.id = id;
             this.Name = name;
@@ -21,9 +21,6 @@ namespace Bank_System.Account
 
         public abstract bool deposit(double amount);
 
-        public bool withdraw(double amount)
-        {
-            throw new NotImplementedException();
-        }
+        public abstract bool withdraw(double amount);
     }
 }

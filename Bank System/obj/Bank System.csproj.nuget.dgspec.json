@@ -45,6 +45,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[39.45.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

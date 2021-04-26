@@ -1,11 +1,11 @@
-﻿using Bank_System.Bank_System;
+﻿using Bank_Accounts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_System.Customer
+namespace Bank_Customer
 {
     class CustomerAccount
     {
@@ -24,6 +24,10 @@ namespace Bank_System.Customer
             this.ID = id;
             this.DOB = dob;
         }
-        
+
+        public override string ToString()
+        {
+            return "Customer Name: "+Name+" "+ "Customer ID: " + ID+" "+ "Date of birth: " + DOB;
+        }
     }
 }

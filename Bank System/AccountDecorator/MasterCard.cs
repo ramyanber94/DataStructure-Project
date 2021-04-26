@@ -1,20 +1,19 @@
-﻿using System;
+﻿using Bank_Account;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_Account
+namespace AccountDecorator
 {
-    class Credit_card : Account
+    class MasterCard : AccountDecorator
     {
-        public double minBalance = -100000;
-        public double dailyWithdrawLimit = 20000;
-
-        public Credit_card(string id , string name) : base(id , name) {
-            name = "credit";
+        public double minBalance = -5000000;
+        public double dailyWithdrawLimit = 70000;
+        public MasterCard(string id , string name) : base(id , name)
+        {
         }
-
 
         public override bool deposit(double amount)
         {
@@ -22,6 +21,20 @@ namespace Bank_Account
             this.balance = balance + ammount;
             Console.WriteLine("You account balance has been deposited.Balance is: " + balance);
             return true;
+        }
+
+        public Account getMasterCard (Credit_card creditAccount)
+        {
+            if(creditAccount.id == id)
+            {
+                creditAccount.dailyWithdrawLimit += 100000;
+                return creditAccount;
+            }
+            else
+            {
+                return null;
+            }
+
         }
 
         public override bool withdraw(double amount)

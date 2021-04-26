@@ -6,4 +6,8 @@
     <RootNamespace>Bank_System</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Stripe.net" Version="39.45.0" />
+  </ItemGroup>
+
 </Project>

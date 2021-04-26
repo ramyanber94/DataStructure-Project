@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_System.Account
+namespace Bank_Account
 {
     interface IAccount
     {

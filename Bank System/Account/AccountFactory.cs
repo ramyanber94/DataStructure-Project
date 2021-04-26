@@ -1,17 +1,17 @@
-﻿using Bank_System.Customer;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_System.Account
+namespace Bank_Account
 {
     class AccountFactory
     {
-        internal static AbstractAccount GetAccount(string type , string id)
+        internal static Account GetAccount(string type , string id)
         {
-                AbstractAccount model;
+                Account model;
                 switch (type)
                 {
                     case "debit":

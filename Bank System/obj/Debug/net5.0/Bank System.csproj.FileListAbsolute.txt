@@ -14,3 +14,17 @@ D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net
 D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\ref\Bank System.dll
 D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.pdb
 D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.genruntimeconfig.cache
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\Microsoft.Win32.SystemEvents.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\Newtonsoft.Json.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\Stripe.net.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\System.Drawing.Common.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\System.Security.Permissions.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\System.Windows.Extensions.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\semster2\data strcture c#\group project\Bank System\Bank System\obj\Debug\net5.0\Bank System.csproj.CopyComplete

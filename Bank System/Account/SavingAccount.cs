@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_System.Account
+namespace Bank_Account
 {
-    class Saving_Account : AbstractAccount
+    class Saving_Account : Account
     {
 
         public Saving_Account(string id ,string name) : base(id,name) {
@@ -22,7 +22,7 @@ namespace Bank_System.Account
             return true;
         }
 
-        public bool withdraw(double amount)
+        public override bool withdraw(double amount)
         {
             this.ammount = amount;
             this.balance = balance - ammount;

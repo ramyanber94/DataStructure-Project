@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "6HhOc2wQY41w5Fzaf8/QSRuKBOvM0W35cYKIQcGnXQ6bcyjehsmUzvh2GmSAMRj42L5b91kFRylguXAlbPU3jA==",
+  "dgSpecHash": "1ykCzz76KzeHrFJMUcpvP41HuG0m21OHxjbdWEYE6ZUtUktB9KWAlNKIwrTqzBQfAOhJK7jDTtxGL+GJWSbj4g==",
   "success": true,
   "projectFilePath": "D:\\semster2\\data strcture c#\\group project\\Bank System\\Bank System\\Bank System.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ramya\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\stripe.net\\39.45.0\\stripe.net.39.45.0.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\system.configuration.configurationmanager\\5.0.0\\system.configuration.configurationmanager.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\system.drawing.common\\5.0.0\\system.drawing.common.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\system.security.cryptography.protecteddata\\5.0.0\\system.security.cryptography.protecteddata.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\system.security.permissions\\5.0.0\\system.security.permissions.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512",
+    "C:\\Users\\ramya\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

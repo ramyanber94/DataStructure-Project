@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_System.Account
+namespace Bank_Account
 {
     class MasterCard : AccountDecorator
     {
@@ -17,7 +17,7 @@ namespace Bank_System.Account
             throw new NotImplementedException();
         }
 
-        public AbstractAccount getMasterCard (Credit_card creditAccount)
+        public Account getMasterCard (Credit_card creditAccount)
         {
             if(creditAccount.id == id)
             {
@@ -29,6 +29,11 @@ namespace Bank_System.Account
                 return null;
             }
 
+        }
+
+        public override bool withdraw(double amount)
+        {
+            throw new NotImplementedException();
         }
     }
 }
