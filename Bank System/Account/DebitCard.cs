@@ -10,7 +10,7 @@ namespace Bank_System
     {
 
         public double maxBalance = 100000;
-        public double dailyTransLimit = 200000;
+        public double dailyTransLimit = 2000;
 
         public DebitCard(string id ,string name) : base(id, name) {
             name = "Debit";
@@ -39,7 +39,7 @@ namespace Bank_System
 
             if (amount > dailyTransLimit)
             {
-                Console.WriteLine("You can not withdraw more than 20000.");
+                Console.WriteLine("You can not withdraw more than 2000.");
                 return false;
 
             }

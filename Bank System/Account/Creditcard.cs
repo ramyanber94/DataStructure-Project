@@ -8,7 +8,7 @@ namespace Bank_System
 {
     class Credit_card : Account
     {
-        public double minBalance = -100000;
+        public double minBalance = -10000;
         public double dailyWithdrawLimit = 20000;
 
         public Credit_card(string id , string name) : base(id , name) {

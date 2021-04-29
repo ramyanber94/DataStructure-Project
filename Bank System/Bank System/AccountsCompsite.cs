@@ -9,25 +9,34 @@ namespace Bank_System
 {
     class AccountsCompsite
     {
-        Dictionary<string , Account> accounts = new Dictionary<string, Account>();
-
-        public void AddAccount(Account account , string id)
+        public List<Account> cards = new List<Account>();
+  
+        public void AddAccount(Account account)
         {
 
-            accounts.Add(id , account);
+            cards.Add(account);
         }
 
-        public Dictionary<string, Account> getAccount(string id)
+        public Account getAccount(string id)
         {
-            Console.Write("Account Type: "+accounts[id].Name +" "+"Account balance: " + accounts[id].balance);
-            return accounts;
+            
+            foreach (var item in cards)
+            {
+                if (id == item.id)
+                { 
+                    return item;
+                }
+            }
+
+            return null;
         }
         public string getAccounts()
         {
             string msg = "";
-            foreach (var account in accounts)
+            foreach (var card in cards)
             {
-                msg += "Account Type: " + account.Value.Name + " " + "Account balance: " + account.Value.balance;
+                msg += "\n Card type: " + card.Name + " , Card ID: " + card.id + " , Card balance: " + card.balance;
+                
             }
             return msg;
         }

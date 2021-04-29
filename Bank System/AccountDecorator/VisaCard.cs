@@ -10,8 +10,8 @@ namespace Container.Accounts
 {
     class VisaCard : AccountDecorator
     {
-        public double minBalance = -600000;
-        public double dailyWithdrawLimit = 40000;
+        public double minBalance = -100000;
+        public double dailyWithdrawLimit = 100000;
 
 
         public VisaCard(string id, string name) : base(id, name)
@@ -50,7 +50,7 @@ namespace Container.Accounts
             }
             else if (amount > dailyWithdrawLimit)
             {
-                Console.WriteLine("You can not withdraw more than 20000.");
+                Console.WriteLine("You can not withdraw more than 100000.");
                 return false;
             }
             else

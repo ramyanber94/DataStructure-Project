@@ -11,7 +11,7 @@ namespace Bank_System
 {
     class MasterCard : AccountDecorator
     {
-        public double minBalance = -5000000;
+        public double minBalance = -50000;
         public double dailyWithdrawLimit = 70000;
         public MasterCard(string id , string name) : base(id , name)
         {
@@ -49,7 +49,7 @@ namespace Bank_System
             }
             else if (amount > dailyWithdrawLimit)
             {
-                Console.WriteLine("You can not withdraw more than 20000.");
+                Console.WriteLine("You can not withdraw more than 70000.");
                 return false;
             }
             else

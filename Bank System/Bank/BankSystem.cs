@@ -13,86 +13,114 @@ namespace Container.Customers
 {
     public static class BankSystem
     {
-        private static Dictionary<CustomerAccount, object> userAccount = new Dictionary<CustomerAccount, object>();
-        private static Hashtable personCards = new Hashtable();
-        private static List<Bank_System.Account> cards = new List<Bank_System.Account>();
-        private static CustomerAccount customer = new CustomerAccount();
+        
+        private static Dictionary<string, CustomerAccount> customers = new Dictionary<string, CustomerAccount>();
 
-        public static void createAccount(string accountId , string AccountName , string customerName , string customerID , string DOB)
+        public static void createAccount(string customerID)
         {
-            customer = new CustomerAccount(customerName, customerID, DOB);
+            CustomerAccount customer;
+            if (customers.ContainsKey(customerID))
+            {
+                customers.TryGetValue(customerID, out customer);
+                Console.WriteLine("Welcome Mr/Miss "+customer.Name);
+            }
+            else {
+                Console.WriteLine("Customer Name");
+                string customerName = Console.ReadLine();
+                Console.WriteLine("Date of birth");
+                string dob = Console.ReadLine();
+                customer = new CustomerAccount(customerName, customerID, dob);
+                customers.Add(customerID,customer);
+            }
             Bank_System.Account account;
+            Console.WriteLine("Account ID");
+            string accountId = Console.ReadLine();
+            Console.WriteLine("Type of Account");
+            string AccountName = Console.ReadLine();
             switch (AccountName)
             {
                 case "debit":
-                    account = AccountFactory.GetAccount("debit", accountId);
-                    customer.Accounts.AddAccount(account , accountId);
+                    account = AccountFactory.GetAccount(AccountName, accountId);
+                    customer.Accounts.AddAccount(account);
                     break;
                 case "credit":
-                    account = new Credit_card(accountId, "credit");
+                    account = AccountFactory.GetAccount(AccountName, accountId);
                     Console.WriteLine("Which type of credit you want? ");
                     string type = Console.ReadLine();
-                    if (type.Equals("Master"))
+                    if (type.Equals("normal"))
                     {
-                        account = new Accounts.MasterCard(accountId, "Master");
-                        cards.Add(account);
-                        foreach (var c in cards)
-                        {
-                            customer.Accounts.AddAccount(c, accountId);
-                        }
+                        account = AccountFactory.GetAccount(AccountName, accountId);
+                    }
+                    if (type.Equals("master"))
+                    {
+                        account = new MasterCard(accountId, type);
                     }
                     else
                     {
-                        account = new VisaCard(accountId, "Visa");                 
-                        customer.Accounts.AddAccount(account, accountId);
-                        
+                        account = new VisaCard(accountId, type);
                     }
+                    customer.Accounts.AddAccount(account);
                     break;
                 case "saving":
-                    account = AccountFactory.GetAccount("saving", accountId);
-                    cards.Add(account);
-                    foreach (var c in cards)
-                    {
-                        customer.Accounts.AddAccount(c, accountId);
-                    }
+                    account = AccountFactory.GetAccount(AccountName, accountId);
+                    customer.Accounts.AddAccount(account);
+                  
                     break;
                 default:
                     Console.WriteLine("Invalid choice");
                     break;
             }
-            userAccount.Add(customer, cards);
+            Console.WriteLine(customer.Accounts.getAccount(accountId).Name + " Created successfully");
         }
 
         public static void getAccounts()
         {
-            foreach (var user in userAccount)
+            foreach (var user in customers.Values)
             {
-                Console.WriteLine($"{user.Key.ToString()} , {user.Key.Accounts.getAccounts()}");
+                Console.WriteLine("Customer Name: " + user.Name + " , Customer ID: " + user.ID
+                         + " , Day of brith: " + user.DOB + " , Cards : " + user.Accounts.getAccounts());
             }
         }
-        public static void deposit(string id , double ammount)
+        public static void deposit()
         {
-            foreach (var item in customer.Accounts.getAccount(id))
+            Console.WriteLine("Enter Customer ID: ");
+            string customerID = Console.ReadLine();
+            if (customers.ContainsKey(customerID))
             {
-                item.Value.deposit(ammount);
+                Console.WriteLine("Account ID");
+                string AccountID = Console.ReadLine();
+                Console.WriteLine("Ammount: ");
+                string amount = Console.ReadLine();
+                foreach (var item in customers.Values)
+                {
+
+                    if (item.Accounts.getAccount(AccountID) != null)
+                    {
+                        item.Accounts.getAccount(AccountID).deposit(Double.Parse(amount));
+                    }
+                }
             }
-            
         }
 
-        public static void withdraw(string id , double ammount)
+        public static void withdraw()
         {
-            foreach (var item in customer.Accounts.getAccount(id))
+            Console.WriteLine("Enter Customer ID: ");
+            string customerID = Console.ReadLine();
+            if (customers.ContainsKey(customerID))
             {
-                item.Value.withdraw(ammount);
-            }
-        }
-        public static void getAccount(string id)
-        {
-            foreach (var user in userAccount)
-            {
-                Console.WriteLine($"{user.Key.ToString()} , {user.Key.Accounts.getAccount(id)}");
-            }
+                Console.WriteLine("Account ID");
+                string AccountID = Console.ReadLine();
+                Console.WriteLine("Ammount: ");
+                string amount = Console.ReadLine();
+                foreach (var item in customers.Values)
+                {
 
+                    if (item.Accounts.getAccount(AccountID) != null)
+                    {
+                        item.Accounts.getAccount(AccountID).withdraw(Double.Parse(amount));
+                    }
+                }
+            }
         }
     }
 }

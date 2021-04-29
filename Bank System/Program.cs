@@ -7,58 +7,53 @@ namespace Bank_System
     {
         static void Main(string[] args)
         {
-            string input;
-            MenuGenrator menu = new MenuGenrator();
             Console.WriteLine("****  Welcome to Bank Management System  ***");
-            while (true)
+            int opt = 1;
+            MenuGenrator menus = new MenuGenrator();
+            do
             {
                 Console.WriteLine("\nWhat you want to do:");
                 Console.WriteLine("1. Create account");
-                Console.WriteLine("2. Show account information");
-                Console.WriteLine("3. Deposit from account");
-                Console.WriteLine("4. Withdraw from account");
-                Console.WriteLine("5. Show all account with id");
-                Console.WriteLine("6. Contact US");
-                Console.WriteLine("7. Clear screen");
+                Console.WriteLine("2. Deposit from account");
+                Console.WriteLine("3. Withdraw from account");
+                Console.WriteLine("4. Show all account with id");
+                Console.WriteLine("5. Contact US");
+                Console.WriteLine("6. Clear screen");
                 Console.WriteLine("0. Exit");
-                object ob1 = Console.ReadLine();
-                input = Convert.ToString(ob1);
+                string input = (Console.ReadLine());
+                try
+                {
+                    opt = Int32.Parse(input);
+                }
+                catch (FormatException)
+                {
+                    Console.WriteLine($"Invalid option {input} selected.");
+                }
+                switch (opt)
+                {
+                    case 1:
+                        menus.createAccount();
+                        break;
+                    case 2:
+                        menus.deposit();
+                        break;
+                    case 3:
+                        menus.withdraw();
+                        break;
+                    case 4:
+                        menus.showAllData();
+                        break;
+                    case 5:
+                        menus.contactUS();
+                        break;
+                    case 6:
+                        Console.Clear();
+                        break;
+                    default:
 
-                if (input == "1")
-                {
-                    menu.createAccount();
+                        break;
                 }
-                else if (input == "2")
-                {
-                    menu.showAccount();
-                }
-                else if (input == "3")
-                {
-                    menu.deposit();
-                }
-                else if (input == "4")
-                {
-                    menu.withdraw();
-                }
-                else if (input == "5")
-                {
-                    menu.showAllData();
-                }
-                else if (input == "6")
-                {
-                    Employees employees = new Employees();
-                    employees.getEmployees();
-                }
-                else if (input == "7")
-                {
-                    Environment.Exit(0);
-                }
-                Console.ReadKey();
-
-
-            
-            
-            }
+            } while (opt != 0);
         }
     }
 }

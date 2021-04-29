@@ -24,10 +24,5 @@ namespace Bank_System
             this.ID = id;
             this.DOB = dob;
         }
-
-        public override string ToString()
-        {
-            return "Customer Name: "+Name+" "+ "Customer ID: " + ID+" "+ "Date of birth: " + DOB;
-        }
     }
 }
