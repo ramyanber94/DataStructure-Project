@@ -1,11 +1,12 @@
-﻿using Bank_Account;
+﻿
+using Bank_System;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AccountDecorator
+namespace Container.Accounts
 {
     class VisaCard : AccountDecorator
     {

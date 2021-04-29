@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace Bank_System
@@ -19,8 +18,9 @@ namespace Bank_System
                 Console.WriteLine("3. Deposit from account");
                 Console.WriteLine("4. Withdraw from account");
                 Console.WriteLine("5. Show all account with id");
-                Console.WriteLine("6. Clear screen");
-                Console.WriteLine("7. Exit");
+                Console.WriteLine("6. Contact US");
+                Console.WriteLine("7. Clear screen");
+                Console.WriteLine("0. Exit");
                 object ob1 = Console.ReadLine();
                 input = Convert.ToString(ob1);
 
@@ -30,7 +30,7 @@ namespace Bank_System
                 }
                 else if (input == "2")
                 {
-                    Console.Write("Enter account Number :");
+                    menu.showAccount();
                 }
                 else if (input == "3")
                 {
@@ -38,7 +38,7 @@ namespace Bank_System
                 }
                 else if (input == "4")
                 {
-                    Console.WriteLine("Enter Account Id: ");
+                    menu.withdraw();
                 }
                 else if (input == "5")
                 {
@@ -46,7 +46,8 @@ namespace Bank_System
                 }
                 else if (input == "6")
                 {
-                    Console.Clear();
+                    Employees employees = new Employees();
+                    employees.getEmployees();
                 }
                 else if (input == "7")
                 {

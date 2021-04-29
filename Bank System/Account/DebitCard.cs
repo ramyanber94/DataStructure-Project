@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_Account
+namespace Bank_System
 {
     class DebitCard : Account
     {

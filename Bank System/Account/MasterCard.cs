@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Bank_System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_Account
+namespace Container.Accounts
 {
     class MasterCard : AccountDecorator
     {

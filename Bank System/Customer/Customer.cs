@@ -1,11 +1,11 @@
-﻿using Bank_Accounts;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Bank_Customer
+namespace Bank_System
 {
     class CustomerAccount
     {

@@ -1,6 +1,6 @@
-﻿using AccountDecorator;
-using Bank_Account;
-using Bank_Customer;
+﻿
+using Bank_System;
+using Container.Accounts;
 using Stripe;
 using System;
 using System.Collections;
@@ -9,18 +9,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BankSystem
+namespace Container.Customers
 {
     public static class BankSystem
     {
         private static Dictionary<CustomerAccount, object> userAccount = new Dictionary<CustomerAccount, object>();
-        private static List<Bank_Account.Account> cards = new List<Bank_Account.Account>();
+        private static Hashtable personCards = new Hashtable();
+        private static List<Bank_System.Account> cards = new List<Bank_System.Account>();
         private static CustomerAccount customer = new CustomerAccount();
 
         public static void createAccount(string accountId , string AccountName , string customerName , string customerID , string DOB)
         {
             customer = new CustomerAccount(customerName, customerID, DOB);
-            Bank_Account.Account account;
+            Bank_System.Account account;
             switch (AccountName)
             {
                 case "debit":
@@ -33,7 +34,7 @@ namespace BankSystem
                     string type = Console.ReadLine();
                     if (type.Equals("Master"))
                     {
-                        account = new AccountDecorator.MasterCard(accountId, "Master");
+                        account = new Accounts.MasterCard(accountId, "Master");
                         cards.Add(account);
                         foreach (var c in cards)
                         {
@@ -76,6 +77,14 @@ namespace BankSystem
                 item.Value.deposit(ammount);
             }
             
+        }
+
+        public static void withdraw(string id , double ammount)
+        {
+            foreach (var item in customer.Accounts.getAccount(id))
+            {
+                item.Value.withdraw(ammount);
+            }
         }
         public static void getAccount(string id)
         {

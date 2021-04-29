@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Container.Customers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,12 +21,19 @@ namespace Bank_System
             string AccountName = Console.ReadLine();
             Console.WriteLine("Customer ID");
             string customerID = Console.ReadLine();
-            BankSystem.BankSystem.createAccount(AccountID, AccountName, customerName, customerID, dob);
+            BankSystem.createAccount(AccountID, AccountName, customerName, customerID, dob);
         }
 
         public void showAllData()
         {
-            BankSystem.BankSystem.getAccounts();
+            BankSystem.getAccounts();
+        }
+
+        public void showAccount()
+        {
+            Console.WriteLine("Enter the account ID: ");
+            string id = Console.ReadLine();
+            BankSystem.getAccount(id);
         }
 
         public void deposit()
@@ -34,7 +42,16 @@ namespace Bank_System
             string AccountID = Console.ReadLine();
             Console.WriteLine("Ammount: ");
             string amount = Console.ReadLine();
-            BankSystem.BankSystem.deposit(AccountID, Double.Parse(amount));
+            BankSystem.deposit(AccountID, Double.Parse(amount));
+        }
+
+        public void withdraw()
+        {
+            Console.WriteLine("Account ID");
+            string AccountID = Console.ReadLine();
+            Console.WriteLine("Ammount: ");
+            string amount = Console.ReadLine();
+            BankSystem.withdraw(AccountID, Double.Parse(amount));
         }
     }
 }
